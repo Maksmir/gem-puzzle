@@ -5,12 +5,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gem Puzzle</title>
+    <title>Gem puzzle</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
+    <section class="controlBlock">
+        <div id="controlElements" class="controlElements">
+            <button id="newGame" class="controlElement">Новая игра</button>
+            <button id="pause" class="controlElement">Пауза</button>
+            <button id="result" class="controlElement">Результаты</button>
+        </div>
+        <div class="infoBlock">
+            <div id="infoSize" class="infoElement size">
+                0x0
+            </div>
+            <div id="scoreGame" class="infoElement score">
+                Счет: 0
+            </div>
+            <div id="timeGame" class="infoElement time">
+                00 : 00
+            </div>
+        </div>
+
+    </section>
+    <section id="sizeSelection" class="sizeSelection">
+        <div id="closeSizeBlock" class="closeSizeBlock">X</div>
+        <h2>Выбери размер</h2>
+        <ul id="size" class="size">
+            <li id="size3x3" class="point">3x3</li>
+            <li id="size4x4" class="point">4x4</li>
+            <li id="size5x5" class="point">5x5</li>
+            <li id="size6x6" class="point">6x6</li>
+            <li id="size7x7" class="point">7x7</li>
+            <li id="size8x8" class="point">8x8</li>
+        </ul>
+    </section>
+    <section id="bestResults" class="bestResults">
+        <div id="closeBestResultsBlock" class="closeBestResultsBlock">X</div>
+        <h2>Лучшие результаты</h2>
+        <ul id="results" class="results">
+            <li class="point">Пока нет результатов</li>
+        </ul>
+    </section>
+    <section id="field" class="field">
+    </section>
+
     <script src="script.js"></script>
 </body>
 
